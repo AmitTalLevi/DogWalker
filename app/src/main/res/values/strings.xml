@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DogWalker</string>
+    <string name="add_dog_walker">Add Dog Walker</string>
+    <string name="all_dog_walkers">All Dog Walkers</string>
+    <string name="favorites">Favorites</string>
+    <string name="description">Description:</string>
+    <string name="dog_walker_name">Dog Walker Name</string>
+    <string name="enter_dog_walker_name">Enter Dog Walker Name</string>
+</resources>

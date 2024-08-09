@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dogwalker.UI_Controllers.DogWalkerActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/dog_walker_IMG_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/dog_walker_TXT_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:text="@string/dog_walker_name"
+        android:textStyle="italic"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/dog_walker_IMG_dishPhoto"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/dog_walker_TXT_name"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@android:drawable/ic_menu_add"
+        />
+
+    <ScrollView
+        android:layout_width="350dp"
+        android:layout_height="450dp"
+        android:layout_below="@+id/dog_walker_IMG_dishPhoto"
+        android:layout_above="@+id/dog_walker_IMG_back"
+        android:layout_marginBottom="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp">
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/dog_walker_TXT_dishDescription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/description"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            />
+    </ScrollView>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/dog_walker_IMG_back"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/ic_back"
+        />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/dog_walker_IMG_addFavorite"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/ic_add_favorite"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/dog_walker_IMG_removeFavorite"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/ic_remove_favorite"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/dog_walker_IMG_deleteDogWalker"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/ic_bin"
+        />
+
+
+</RelativeLayout>

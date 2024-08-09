@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dogwalker.UI_Controllers.AddDogWalkerActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/addDogWalker_IMG_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/addDogWalker_IMG_dishPhoto"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@android:drawable/ic_menu_add"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/addDogWalker_IMG_addPhoto"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/ic_add_photo"
+        android:layout_below="@id/addDogWalker_IMG_dishPhoto"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/addDogWalker_TXT_dishName"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addDogWalker_IMG_addPhoto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:hint="@string/enter_dog_walker_name"
+        android:minHeight="48dp"
+        android:text=""
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/addDogWalker_TXT_dishDescription"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/addDogWalker_TXT_dishName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:isScrollContainer="true"
+        android:inputType="textMultiLine"
+        android:cursorVisible="true"
+        android:text=""
+        android:hint="@string/description"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:gravity="left"
+        />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/addDogWalker_PI_uploadIndicator"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addDogWalker_TXT_dishDescription"
+        android:layout_marginTop="5dp"
+        android:layout_centerInParent="true"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/addDogWalker_IMG_save"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/ic_save"
+        android:layout_below="@id/addDogWalker_PI_uploadIndicator"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/addDogWalker_IMG_cancel"
+        android:layout_width="170dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/addDogWalker_IMG_save"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/ic_cancel" />
+
+</RelativeLayout>
