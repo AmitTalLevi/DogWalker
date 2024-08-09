@@ -1,20 +1,20 @@
-# MyRecipes
+# Dog Walker
 
 ## This Project Made During "Android Development" Course.
 
-## Project Explenation:
+## Project Explanation:
   We were asked to create an android application as we wish.
   The idea for the application can be any field we choose - must contain two (or more) server components (connecting, uploading photos, data management in Firefox)   and a reasonable amount of features.
 
   I chose to create a recipe book application.
   Every user is able to upload any recipe with name description and image and can set each recipe as favorite or not.
-  Afret authentication each user will be able to see in his app all his recipes and the favorite recipes that is stored on firebase and to upload new recipes.
+  Authentication each user will be able to see in his app all his recipes and the favorite recipes that is stored on firebase and to upload new recipes.
 
 ### The Main Features:
   * Authentication with firebase.
-  * Uploading and downloading recipe from realtime database and immages from firebase storage.
+  * Uploading and downloading recipe from realtime database and images from firebase storage.
   * All recipes has backup on firebase.
-  * Success/failior notification (Toast message).
+  * Success/failing notification (Toast message).
   * Ability to add and delete recipes.
   * Ability to set recipes as favorites.
   * Icon.
