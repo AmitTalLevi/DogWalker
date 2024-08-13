@@ -18,65 +18,135 @@
         android:id="@+id/menu_LBL_addDogWalker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="50dp"
         android:text="@string/add_dog_walker"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:textStyle="italic"
         />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/menu_IMG_addDogWalker"
-        android:layout_width="200dp"
+        android:layout_width="150dp"
         android:layout_height="100dp"
-        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="15dp"
         app:srcCompat="@drawable/add_user"
         android:layout_below="@id/menu_LBL_addDogWalker"
         />
 
     <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/menu_LBL_addDog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/add_dog"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/menu_IMG_addDog"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/ic_add_dog"
+        android:layout_below="@id/menu_LBL_addDog"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/menu_LBL_allDogWalkers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
         android:layout_below="@id/menu_IMG_addDogWalker"
         android:text="@string/all_dog_walkers"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:textStyle="italic"
         />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/menu_IMG_allDogWalkers"
-        android:layout_width="200dp"
+        android:layout_width="150dp"
         android:layout_height="100dp"
-        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="15dp"
         android:layout_below="@id/menu_LBL_allDogWalkers"
         app:srcCompat="@drawable/group_svgrepo_com"
         />
 
     <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/menu_LBL_allDogs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/menu_IMG_addDog"
+        android:text="@string/all_dog_walkers"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/menu_IMG_allDogs"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/menu_LBL_allDogs"
+        app:srcCompat="@drawable/ic_all_dogs"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/menu_LBL_favorites"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
         android:layout_below="@id/menu_IMG_allDogWalkers"
         android:text="@string/favorites"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:textStyle="italic"
         />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/menu_IMG_favorites"
-        android:layout_width="200dp"
+        android:layout_width="150dp"
         android:layout_height="100dp"
-        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="15dp"
         android:layout_below="@id/menu_LBL_favorites"
         app:srcCompat="@drawable/favorite" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/menu_LBL_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/menu_IMG_allDogs"
+        android:text="@string/chat"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/menu_IMG_chat"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginend="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/menu_LBL_chat"
+        app:srcCompat="@drawable/ic_chat" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/menu_IMG_logOut"
