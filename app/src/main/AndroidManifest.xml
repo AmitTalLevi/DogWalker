@@ -11,8 +11,6 @@
         android:maxSdkVersion="32"
         tools:ignore="ScopedStorage" />
 
-
-
     <application
         android:name="com.example.dogwalker.App"
         android:allowBackup="true"
@@ -34,10 +32,19 @@
             android:name="com.example.dogwalker.UI_Controllers.DogWalkerActivity"
             android:exported="false" />
         <activity
+            android:name="com.example.dogwalker.UI_Controllers.DogActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.dogwalker.UI_Controllers.AllDogWalkersActivity"
             android:exported="false" />
         <activity
+            android:name="com.example.dogwalker.UI_Controllers.AllDogsActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.dogwalker.UI_Controllers.AddDogWalkerActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.dogwalker.UI_Controllers.AddDogActivity"
             android:exported="false" />
         <activity
             android:name="com.example.dogwalker.UI_Controllers.LogInActivity"
