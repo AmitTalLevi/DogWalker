@@ -31,7 +31,7 @@
         android:layout_height="100dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        app:srcCompat="@drawable/pawprint_paw_svgrepo_com"
+        app:srcCompat="@drawable/add_user"
         android:layout_below="@id/menu_LBL_addDogWalker"
         />
 
@@ -54,7 +54,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:layout_below="@id/menu_LBL_allDogWalkers"
-        app:srcCompat="@drawable/ic_logo"
+        app:srcCompat="@drawable/group_svgrepo_com"
         />
 
     <com.google.android.material.textview.MaterialTextView
@@ -76,7 +76,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:layout_below="@id/menu_LBL_favorites"
-        app:srcCompat="@drawable/ic_favorites" />
+        app:srcCompat="@drawable/favorite" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/menu_IMG_logOut"

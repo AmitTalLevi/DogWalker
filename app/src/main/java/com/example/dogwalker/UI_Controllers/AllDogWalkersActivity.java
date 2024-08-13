@@ -42,7 +42,7 @@ public class AllDogWalkersActivity extends AppCompatActivity {
 
         Glide
                 .with(this)
-                .load(R.drawable.old_paper_background)
+                .load(R.drawable.background)
                 .centerCrop()
                 .placeholder(R.drawable.ic_launcher_background)
                 .into(allDogWalkers_IMG_background);

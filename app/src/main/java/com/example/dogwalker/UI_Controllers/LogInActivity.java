@@ -45,7 +45,7 @@ public class LogInActivity extends AppCompatActivity {
 
         Glide
                 .with(this)
-                .load(R.drawable.old_paper_background)
+                .load(R.drawable.background)
                 .centerCrop()
                 .placeholder(R.drawable.ic_launcher_background)
                 .into(login_IMG_background);

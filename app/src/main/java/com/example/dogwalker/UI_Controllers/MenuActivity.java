@@ -41,7 +41,7 @@ public class MenuActivity extends AppCompatActivity {
 
         Glide
                 .with(this)
-                .load(R.drawable.old_paper_background)
+                .load(R.drawable.background)
                 .centerCrop()
                 .placeholder(R.drawable.ic_launcher_background)
                 .into(menu_IMG_background);
