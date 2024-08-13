@@ -21,7 +21,9 @@ import com.google.android.material.imageview.ShapeableImageView;
 public class MenuActivity extends AppCompatActivity {
     private ShapeableImageView menu_IMG_background;
     private ShapeableImageView menu_IMG_addDogWalker;
+    private ShapeableImageView menu_IMG_addDog;
     private ShapeableImageView menu_IMG_allDogWalkers;
+    private ShapeableImageView menu_IMG_allDogs;
     private ShapeableImageView menu_IMG_favorites;
     private ShapeableImageView menu_IMG_logOut;
 
@@ -72,6 +74,10 @@ public class MenuActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    private void addDogClicked() {
+        Intent intent = new Intent(MenuActivity.this, AddDogActivity.class);
+        startActivity(intent);
+    }
 
     private void allDogWalkersClicked() {
         Intent intent = new Intent(MenuActivity.this, AllDogWalkersActivity.class);
@@ -79,6 +85,11 @@ public class MenuActivity extends AppCompatActivity {
         finish();
     }
 
+    private void allDogsClicked() {
+        Intent intent = new Intent(MenuActivity.this, AllDogsActivity.class);
+        startActivity(intent);
+        finish();
+    }
 
     private void favoritesClicked() {
         Intent intent = new Intent(MenuActivity.this, AllFavoritesActivity.class);
@@ -89,16 +100,19 @@ public class MenuActivity extends AppCompatActivity {
 
     private void initViews() {
         menu_IMG_addDogWalker.setOnClickListener(v -> addDogWalkerClicked());
+        menu_IMG_addDog.setOnClickListener(v -> addDogClicked());
         menu_IMG_allDogWalkers.setOnClickListener(v -> allDogWalkersClicked());
+        menu_IMG_allDogs.setOnClickListener(v -> allDogsClicked());
         menu_IMG_favorites.setOnClickListener(v -> favoritesClicked());
         menu_IMG_logOut.setOnClickListener(v -> signOutClicked());
     }
 
-
     private void findViews() {
         menu_IMG_background = findViewById(R.id.menu_IMG_background);
-        menu_IMG_addDogWalker = findViewById(R.id.menu_IMG_addDogWalker);;
+        menu_IMG_addDogWalker = findViewById(R.id.menu_IMG_addDogWalker);
+        menu_IMG_addDog = findViewById(R.id.menu_IMG_addDog);
         menu_IMG_allDogWalkers = findViewById(R.id.menu_IMG_allDogWalkers);
+        menu_IMG_allDogs = findViewById(R.id.menu_IMG_allDogs);
         menu_IMG_favorites = findViewById(R.id.menu_IMG_favorites);
         menu_IMG_logOut = findViewById(R.id.menu_IMG_logOut);
     }
