@@ -37,13 +37,18 @@ public class AddDogWalkerActivity extends AppCompatActivity {
     private ShapeableImageView addDogWalker_IMG_addPhoto;
     private ShapeableImageView addDogWalker_IMG_save;
     private ShapeableImageView addDogWalker_IMG_cancel;
-    private EditText addDogWalker_TXT_dishName;
-    private EditText addDogWalker_TXT_dishDescription;
+    private EditText addDogWalker_TXT_name;
+    private EditText addDogWalker_TXT_phone;
+    private EditText addDogWalker_TXT_email;
+    private EditText addDogWalker_TXT_address;
+    private EditText addDogWalker_TXT_description;
+    private EditText addDogWalker_TXT_hourlyWage;
+    private EditText addDogWalker_TXT_experience;
     private Uri imageUri;
     private DataManager manager;
     private StorageReference storageReference;
     private Uri firebaseImage;
-    
+
     private final ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
             new ActivityResultCallback<ActivityResult>() {
@@ -134,17 +139,22 @@ public class AddDogWalkerActivity extends AppCompatActivity {
 
 
     private void saveClicked() {
-        String dishName = addDogWalker_TXT_dishName.getText().toString();
-        String dishDescription = addDogWalker_TXT_dishDescription.getText().toString();
+        String name = addDogWalker_TXT_name.getText().toString();
+        String phone = addDogWalker_TXT_phone.getText().toString();
+        String email = addDogWalker_TXT_email.getText().toString();
+        String address = addDogWalker_TXT_address.getText().toString();
+        String description = addDogWalker_TXT_description.getText().toString();
+        double hourlyWage = Double.parseDouble(addDogWalker_TXT_hourlyWage.getText().toString());
+        double experience = Double.parseDouble(addDogWalker_TXT_experience.getText().toString());
 
-        DogWalker dogWalkerpe;
+        DogWalker dogWalker;
 
         if (this.firebaseImage == null)
-            dogWalkerpe = new DogWalker(dishName, dishDescription, this.imageUri);
+            dogWalker = new DogWalker(name, phone, email, address, description, hourlyWage, experience, this.imageUri);
         else
-            dogWalkerpe = new DogWalker(dishName, dishDescription, this.firebaseImage);
+            dogWalker = new DogWalker(name, phone, email, address, description, hourlyWage, experience, this.firebaseImage);
 
-        this.manager.addDogWalker(dogWalkerpe);
+        this.manager.addDogWalker(dogWalker);
 
         Intent intent = new Intent(AddDogWalkerActivity.this, MenuActivity.class);
         startActivity(intent);
@@ -162,12 +172,17 @@ public class AddDogWalkerActivity extends AppCompatActivity {
     private void findViews() {
         addDogWalker_IMG_background = findViewById(R.id.addDogWalker_IMG_background);
 
-        addDogWalker_IMG_dishPhoto = findViewById(R.id.addDogWalker_IMG_dishPhoto);
+        addDogWalker_IMG_dishPhoto = findViewById(R.id.addDogWalker_IMG_photo);
         addDogWalker_PI_uploadIndicator = findViewById(R.id.addDogWalker_PI_uploadIndicator);
         addDogWalker_IMG_addPhoto = findViewById(R.id.addDogWalker_IMG_addPhoto);
 
-        addDogWalker_TXT_dishName = findViewById(R.id.addDogWalker_TXT_dishName);
-        addDogWalker_TXT_dishDescription = findViewById(R.id.addDogWalker_TXT_dishDescription);
+        addDogWalker_TXT_name = findViewById(R.id.addDogWalker_TXT_name);
+        addDogWalker_TXT_phone = findViewById(R.id.addDogWalker_TXT_phone);
+        addDogWalker_TXT_email = findViewById(R.id.addDogWalker_TXT_email);
+        addDogWalker_TXT_address = findViewById(R.id.addDogWalker_TXT_address);
+        addDogWalker_TXT_description = findViewById(R.id.addDogWalker_TXT_description);
+        addDogWalker_TXT_hourlyWage = findViewById(R.id.addDogWalker_TXT_hourlyWage);
+        addDogWalker_TXT_experience = findViewById(R.id.addDogWalker_TXT_experience);
 
         addDogWalker_IMG_save = findViewById(R.id.addDogWalker_IMG_save);
         addDogWalker_IMG_cancel = findViewById(R.id.addDogWalker_IMG_cancel);

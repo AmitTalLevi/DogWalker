@@ -167,7 +167,12 @@ public class DataManager {
             this.ref.child("all_dog_walkers").child("" + dogWalker.getRid()).child("uri").setValue(dogWalker.getPhoto().toString());
         this.ref.child("all_dog_walkers").child("" + dogWalker.getRid()).child("isFavorite").setValue(dogWalker.isFavorite());
         this.ref.child("all_dog_walkers").child("" + dogWalker.getRid()).child("name").setValue(dogWalker.getName());
+        this.ref.child("all_dog_walkers").child("" + dogWalker.getRid()).child("phone").setValue(dogWalker.getPhone());
+        this.ref.child("all_dog_walkers").child("" + dogWalker.getRid()).child("email").setValue(dogWalker.getEmail());
+        this.ref.child("all_dog_walkers").child("" + dogWalker.getRid()).child("address").setValue(dogWalker.getAddress());
         this.ref.child("all_dog_walkers").child("" + dogWalker.getRid()).child("description").setValue(dogWalker.getDescription());
+        this.ref.child("all_dog_walkers").child("" + dogWalker.getRid()).child("hourlyWage").setValue(dogWalker.getHourlyWage());
+        this.ref.child("all_dog_walkers").child("" + dogWalker.getRid()).child("experience").setValue(dogWalker.getExperience());
     }
 
 
@@ -180,8 +185,13 @@ public class DataManager {
         if (dogWalker.getPhoto() != null)
             this.ref.child("all_favorites").child("" + dogWalker.getRid()).child("uri").setValue(dogWalker.getPhoto().toString());
         this.ref.child("all_favorites").child("" + dogWalker.getRid()).child("isFavorite").setValue(dogWalker.isFavorite());
-        this.ref.child("all_favorites").child("" + dogWalker.getRid()).child("name").setValue(dogWalker.getName());
-        this.ref.child("all_favorites").child("" + dogWalker.getRid()).child("description").setValue(dogWalker.getDescription());
+        this.ref.child("all_dog_walkers").child("" + dogWalker.getRid()).child("name").setValue(dogWalker.getName());
+        this.ref.child("all_dog_walkers").child("" + dogWalker.getRid()).child("phone").setValue(dogWalker.getPhone());
+        this.ref.child("all_dog_walkers").child("" + dogWalker.getRid()).child("email").setValue(dogWalker.getEmail());
+        this.ref.child("all_dog_walkers").child("" + dogWalker.getRid()).child("address").setValue(dogWalker.getAddress());
+        this.ref.child("all_dog_walkers").child("" + dogWalker.getRid()).child("description").setValue(dogWalker.getDescription());
+        this.ref.child("all_dog_walkers").child("" + dogWalker.getRid()).child("hourlyWage").setValue(dogWalker.getHourlyWage());
+        this.ref.child("all_dog_walkers").child("" + dogWalker.getRid()).child("experience").setValue(dogWalker.getExperience());
     }
 
 

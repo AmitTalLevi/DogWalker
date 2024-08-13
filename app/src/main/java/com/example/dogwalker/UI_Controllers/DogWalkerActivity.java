@@ -21,9 +21,14 @@ import com.google.android.material.textview.MaterialTextView;
 
 public class DogWalkerActivity extends AppCompatActivity {
     private ShapeableImageView dog_walker_IMG_background;
+    private ShapeableImageView dog_walker_IMG_photo;
     private MaterialTextView dog_walker_TXT_name;
-    private ShapeableImageView dog_walker_IMG_dishPhoto;
-    private MaterialTextView dog_walker_TXT_dishDescription;
+    private MaterialTextView dog_walker_TXT_phone;
+    private MaterialTextView dog_walker_TXT_email;
+    private MaterialTextView dog_walker_TXT_address;
+    private MaterialTextView dog_walker_TXT_description;
+    private MaterialTextView dog_walker_TXT_hourlyWage;
+    private MaterialTextView dog_walker_TXT_experience;
     private ShapeableImageView dog_walker_IMG_back;
     private ShapeableImageView dog_walker_IMG_addFavorite;
     private ShapeableImageView dog_walker_IMG_removeFavorite;
@@ -58,7 +63,7 @@ public class DogWalkerActivity extends AppCompatActivity {
 
         findViews();
 
-        ImageLoader.getInstance().load(this.dogWalker.getPhoto(), this.dog_walker_IMG_dishPhoto);
+        ImageLoader.getInstance().load(this.dogWalker.getPhoto(), this.dog_walker_IMG_photo);
 
         Glide
                 .with(this)
@@ -115,8 +120,12 @@ public class DogWalkerActivity extends AppCompatActivity {
 
     private void initViews() {
         dog_walker_TXT_name.setText(this.dogWalker.getName());
-
-        dog_walker_TXT_dishDescription.setText(this.dogWalker.getDescription());
+        dog_walker_TXT_phone.setText(this.dogWalker.getPhone());
+        dog_walker_TXT_email.setText(this.dogWalker.getEmail());
+        dog_walker_TXT_address.setText(this.dogWalker.getAddress());
+        dog_walker_TXT_description.setText(this.dogWalker.getDescription());
+        dog_walker_TXT_hourlyWage.setText(String.valueOf(this.dogWalker.getHourlyWage()));
+        dog_walker_TXT_experience.setText(String.valueOf(this.dogWalker.getExperience()));
 
         if (this.dogWalker.isFavorite()) {
             dog_walker_IMG_addFavorite.setVisibility(View.INVISIBLE);
@@ -138,9 +147,15 @@ public class DogWalkerActivity extends AppCompatActivity {
 
     private void findViews() {
         dog_walker_IMG_background = findViewById(R.id.dog_walker_IMG_background);
+        dog_walker_IMG_photo = findViewById(R.id.dog_walker_IMG_photo);
         dog_walker_TXT_name = findViewById(R.id.dog_walker_TXT_name);
-        dog_walker_IMG_dishPhoto = findViewById(R.id.dog_walker_IMG_dishPhoto);
-        dog_walker_TXT_dishDescription = findViewById(R.id.dog_walker_TXT_dishDescription);
+        dog_walker_TXT_phone = findViewById(R.id.dog_walker_TXT_phone);
+        dog_walker_TXT_email = findViewById(R.id.dog_walker_TXT_email);
+        dog_walker_TXT_address = findViewById(R.id.dog_walker_TXT_address);
+        dog_walker_TXT_description = findViewById(R.id.dog_walker_TXT_description);
+        dog_walker_TXT_hourlyWage = findViewById(R.id.dog_walker_TXT_hourlyWage);
+        dog_walker_TXT_experience = findViewById(R.id.dog_walker_TXT_experience);
+
         dog_walker_IMG_back = findViewById(R.id.dog_walker_IMG_back);
         dog_walker_IMG_addFavorite = findViewById(R.id.dog_walker_IMG_addFavorite);
         dog_walker_IMG_removeFavorite = findViewById(R.id.dog_walker_IMG_removeFavorite);
