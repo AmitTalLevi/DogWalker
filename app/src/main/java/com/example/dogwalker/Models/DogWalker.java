@@ -16,7 +16,6 @@ public class DogWalker {
     private double experience = 0;
     private Uri photo;
     private boolean isFavorite = false;
-    private final DataManager manager = DataManager.getInstance();
 
 
     public DogWalker() {
@@ -24,7 +23,8 @@ public class DogWalker {
 
 
     public DogWalker(String name,String phone,String email,String address, String description,double hourlyWage, double experience, Uri photo) {
-        this.rid = manager.generateID();
+        DataManager manager = DataManager.getInstance();
+        this.rid = manager.generateDogWalkerID();
         this.name = name;
         this.phone = phone;
         this.email = email;

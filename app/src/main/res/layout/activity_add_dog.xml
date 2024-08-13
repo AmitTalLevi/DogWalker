@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dogwalker.UI_Controllers.AddDogActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/addDog_IMG_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/addDog_IMG_photo"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@android:drawable/ic_menu_add"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/addDog_IMG_addPhoto"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/ic_add_photo"
+        android:layout_below="@id/addDog_IMG_photo"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/addDog_TXT_name"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addDog_IMG_addPhoto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="left"
+        android:hint="@string/enter_dog_walker_name"
+        android:minHeight="48dp"
+        android:text=""
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/addDog_TXT_phone"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addDog_TXT_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:hint="@string/phone"
+        android:minHeight="48dp"
+        android:text=""
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/addDog_TXT_email"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addDog_TXT_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:hint="@string/email"
+        android:minHeight="48dp"
+        android:text=""
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/addDog_TXT_address"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addDog_TXT_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:hint="@string/address"
+        android:minHeight="48dp"
+        android:text=""
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/addDog_PI_uploadIndicator"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addDog_TXT_address"
+        android:layout_marginTop="150dp"
+        android:layout_centerInParent="true"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/addDog_IMG_save"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/ic_save"
+        android:layout_below="@id/addDog_PI_uploadIndicator"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/addDog_IMG_cancel"
+        android:layout_width="170dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/addDog_IMG_save"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/ic_cancel" />
+
+</RelativeLayout>

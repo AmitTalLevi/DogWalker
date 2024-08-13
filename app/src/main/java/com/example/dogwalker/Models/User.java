@@ -4,12 +4,16 @@ import java.util.ArrayList;
 
 public class User {
     private String uid;
+    private ArrayList<Integer> myDogsRids;
+    private ArrayList<Dog> dogs;
     private ArrayList<Integer> myDogWalkersRids;
     private ArrayList<DogWalker> dogWalkers;
     private ArrayList<DogWalker> favorites;
 
 
     public User() {
+        this.myDogsRids = new ArrayList<>();
+        this.dogs = new ArrayList<>();
         this.dogWalkers = new ArrayList<>();
         this.favorites = new ArrayList<>();
         this.myDogWalkersRids = new ArrayList<>();
@@ -18,6 +22,8 @@ public class User {
 
     public User(String uid) {
         this.uid = uid;
+        this.myDogsRids = new ArrayList<>();
+        this.dogs = new ArrayList<>();
         this.dogWalkers = new ArrayList<>();
         this.favorites = new ArrayList<>();
         this.myDogWalkersRids = new ArrayList<>();
@@ -33,6 +39,13 @@ public class User {
         this.uid = uid;
     }
 
+    public ArrayList<Dog> getDogs() {
+        return dogs;
+    }
+
+    public void setDogs(ArrayList<Dog> dogs) {
+        this.dogs = dogs;
+    }
 
     public ArrayList<DogWalker> getDogWalkers() {
         return dogWalkers;
@@ -61,14 +74,21 @@ public class User {
         }
     }
 
+    public ArrayList<Integer> getMyDogsRids() {
+        return myDogsRids;
+    }
 
     public ArrayList<Integer> getMyDogWalkersRids() {
         return myDogWalkersRids;
     }
 
-
     public void initMyDogWalkersRids() {
         for (int i = 0; i < this.dogWalkers.size(); i++)
             this.myDogWalkersRids.add(dogWalkers.get(i).getRid());
+    }
+
+    public void initMyDogsRids() {
+        for (int i = 0; i < this.dogs.size(); i++)
+            this.myDogsRids.add(dogs.get(i).getRid());
     }
 }

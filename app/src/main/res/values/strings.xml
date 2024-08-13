@@ -11,4 +11,6 @@
     <string name="address">Address</string>
     <string name="hourly_wage">Hourly Wage</string>
     <string name="experience">Experience</string>
+    <string name="dog_name">Dog Name</string>
+    <string name="all_dogs">All Dogs</string>
 </resources>
