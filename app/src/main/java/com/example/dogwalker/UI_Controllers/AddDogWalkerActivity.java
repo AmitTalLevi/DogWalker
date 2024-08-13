@@ -32,7 +32,7 @@ import java.util.UUID;
 
 public class AddDogWalkerActivity extends AppCompatActivity {
     private ShapeableImageView addDogWalker_IMG_background;
-    private ShapeableImageView addDogWalker_IMG_dishPhoto;
+    private ShapeableImageView addDogWalker_IMG_photo;
     private LinearProgressIndicator addDogWalker_PI_uploadIndicator;
     private ShapeableImageView addDogWalker_IMG_addPhoto;
     private ShapeableImageView addDogWalker_IMG_save;
@@ -59,7 +59,7 @@ public class AddDogWalkerActivity extends AppCompatActivity {
                             imageUri = result.getData().getData();
                             Glide.with(getApplicationContext())
                                     .load(imageUri)
-                                    .into(addDogWalker_IMG_dishPhoto);
+                                    .into(addDogWalker_IMG_photo);
                             SignalManager.getInstance().toast("Image selected successfully");
                             uploadImage(imageUri);
                         } else {
@@ -172,7 +172,7 @@ public class AddDogWalkerActivity extends AppCompatActivity {
     private void findViews() {
         addDogWalker_IMG_background = findViewById(R.id.addDogWalker_IMG_background);
 
-        addDogWalker_IMG_dishPhoto = findViewById(R.id.addDogWalker_IMG_photo);
+        addDogWalker_IMG_photo = findViewById(R.id.addDogWalker_IMG_photo);
         addDogWalker_PI_uploadIndicator = findViewById(R.id.addDogWalker_PI_uploadIndicator);
         addDogWalker_IMG_addPhoto = findViewById(R.id.addDogWalker_IMG_addPhoto);
 
