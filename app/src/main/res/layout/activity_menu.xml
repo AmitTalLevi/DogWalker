@@ -45,7 +45,7 @@
         android:text="@string/add_dog"
         android:textSize="20sp"
         android:textStyle="italic"
-        />
+        tools:ignore="RelativeOverlap" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/menu_IMG_addDog"
@@ -142,7 +142,7 @@
         android:id="@+id/menu_IMG_chat"
         android:layout_width="150dp"
         android:layout_height="100dp"
-        android:layout_marginend="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="15dp"
         android:layout_below="@id/menu_LBL_chat"

@@ -88,7 +88,7 @@ public class MenuActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
-    
+
     private void initViews() {
         menu_IMG_addDogWalker.setOnClickListener(v -> addDogWalkerClicked());
         menu_IMG_addDog.setOnClickListener(v -> addDogClicked());
