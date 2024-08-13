@@ -46,10 +46,10 @@ public class FavoriteAdapter extends RecyclerView.Adapter<FavoriteAdapter.Favori
 
     @Override
     public void onBindViewHolder(@NonNull FavoriteAdapter.FavoriteViewHolder holder, int position) {
-        //this is the method that brings specific recipe and connects the data with the view holder
-        DogWalker recipe = getItem(position);
-        ImageLoader.getInstance().load(recipe.getPhoto(), holder.favorite_IMG_image);
-        holder.favorite_LBL_name.setText(recipe.getName());
+        //this is the method that brings specific dogWalker and connects the data with the view holder
+        DogWalker dogWalker = getItem(position);
+        ImageLoader.getInstance().load(dogWalker.getPhoto(), holder.favorite_IMG_image);
+        holder.favorite_LBL_name.setText(dogWalker.getName());
     }
 
 
