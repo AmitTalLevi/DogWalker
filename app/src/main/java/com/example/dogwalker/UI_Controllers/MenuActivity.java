@@ -11,6 +11,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.bumptech.glide.Glide;
 import com.example.dogwalker.R;
+import com.example.dogwalker.Utilities.SignalManager;
 import com.firebase.ui.auth.AuthUI;
 import com.google.android.material.imageview.ShapeableImageView;
 
@@ -22,6 +23,7 @@ public class MenuActivity extends AppCompatActivity {
     private ShapeableImageView menu_IMG_allDogWalkers;
     private ShapeableImageView menu_IMG_allDogs;
     private ShapeableImageView menu_IMG_favorites;
+    private ShapeableImageView menu_IMG_chat;
     private ShapeableImageView menu_IMG_logOut;
 
 
@@ -95,6 +97,7 @@ public class MenuActivity extends AppCompatActivity {
         menu_IMG_allDogWalkers.setOnClickListener(v -> allDogWalkersClicked());
         menu_IMG_allDogs.setOnClickListener(v -> allDogsClicked());
         menu_IMG_favorites.setOnClickListener(v -> favoritesClicked());
+        menu_IMG_chat.setOnClickListener(v -> SignalManager.getInstance().toast("Chat is still WIP"));
         menu_IMG_logOut.setOnClickListener(v -> signOutClicked());
     }
 
@@ -105,6 +108,7 @@ public class MenuActivity extends AppCompatActivity {
         menu_IMG_allDogWalkers = findViewById(R.id.menu_IMG_allDogWalkers);
         menu_IMG_allDogs = findViewById(R.id.menu_IMG_allDogs);
         menu_IMG_favorites = findViewById(R.id.menu_IMG_favorites);
+        menu_IMG_chat = findViewById(R.id.menu_IMG_chat);
         menu_IMG_logOut = findViewById(R.id.menu_IMG_logOut);
     }
 }
