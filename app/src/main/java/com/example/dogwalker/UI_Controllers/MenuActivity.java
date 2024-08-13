@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -13,8 +12,6 @@ import androidx.core.view.WindowInsetsCompat;
 import com.bumptech.glide.Glide;
 import com.example.dogwalker.R;
 import com.firebase.ui.auth.AuthUI;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.android.material.imageview.ShapeableImageView;
 
 
@@ -51,23 +48,18 @@ public class MenuActivity extends AppCompatActivity {
         initViews();
     }
 
-
     private void signOutClicked() {
         logOut();
     }
 
-
     private void logOut() {
         AuthUI.getInstance()
                 .signOut(this)
-                .addOnCompleteListener(new OnCompleteListener<Void>() {
-                    public void onComplete(@NonNull Task<Void> task) {
-                        startActivity(new Intent(MenuActivity.this, LogInActivity.class));
-                        finish();
-                    }
+                .addOnCompleteListener(task -> {
+                    startActivity(new Intent(MenuActivity.this, LogInActivity.class));
+                    finish();
                 });
     }
-
 
     private void addDogWalkerClicked() {
         Intent intent = new Intent(MenuActivity.this, AddDogWalkerActivity.class);
@@ -96,8 +88,7 @@ public class MenuActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
-
-
+    
     private void initViews() {
         menu_IMG_addDogWalker.setOnClickListener(v -> addDogWalkerClicked());
         menu_IMG_addDog.setOnClickListener(v -> addDogClicked());
