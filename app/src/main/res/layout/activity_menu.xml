@@ -84,11 +84,11 @@
         android:id="@+id/menu_LBL_allDogs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="60dp"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="30dp"
         android:layout_below="@id/menu_IMG_addDog"
-        android:text="@string/all_dog_walkers"
+        android:text="@string/all_dogs"
         android:textSize="20sp"
         android:textStyle="italic"
         />
