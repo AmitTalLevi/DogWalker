@@ -8,7 +8,8 @@ The app makes it easy for dog owners to find and choose a dog walker service.
 * Dog Profiles: Create and manage dog profiles including name, breed, age, and special needs.
 * Favorite Dog Walkers: Choose dog walkers to put in your favorite list.
 * Firebase Integration: All data is stored in Firebase, ensuring real-time updates and secure data handling.
-* In the future, I will add the possibility of chatting between dog owners and dog walkers.
+* In the future, I will add the possibility of chatting between dog owners and dog walkers:
+  This feature that enables real-time communication between dog owners and dog walkers, allowing them to easily coordinate schedules, share updates, and discuss the dog's needs and experiences during walks.
 
 ## Project Tech Stack:
 Android SDK
