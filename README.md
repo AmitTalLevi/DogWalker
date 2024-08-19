@@ -28,7 +28,12 @@ Here are some screenshots of the application:
 <img width="214" alt="AllDogWalker" src="https://github.com/user-attachments/assets/63b93da9-fbdd-4b3f-a030-48fb15089810">
 <img width="206" alt="Favorites" src="https://github.com/user-attachments/assets/7cf50a0f-db68-446b-8477-17a2abc5b522">
 <img width="207" alt="DescriptionDogWalker" src="https://github.com/user-attachments/assets/bb2f073d-0c1b-467a-99c1-c9f6bad75f99">
+<img width="212" alt="Add dog" src="https://github.com/user-attachments/assets/172259b0-7b82-4569-9857-31d445b13605">
 <img width="205" alt="AllDog" src="https://github.com/user-attachments/assets/9b7717d2-2a18-4f1d-bc62-28963f117c2c">
+
+In the future:
+
+
 <img width="106" alt="Chat" src="https://github.com/user-attachments/assets/9e949321-68ec-4217-b692-9e2f4fe05d32">
 
 
